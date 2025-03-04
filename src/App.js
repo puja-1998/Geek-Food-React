@@ -1,25 +1,51 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import QuoteCard from './components/QuoteCard/QuoteCard';
+import { Outlet } from "react-router-dom";
+import Home from './components/Home/Home';
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <>
+      
+      <Outlet></Outlet>
+      </>
+ );
 }
 
 export default App;
+
+    // <div className="App">
+    //   {/* Header Section */}
+    //   <div>
+    //     <Header/>
+    //   </div>
+
+    //   {/* Hero Section */}
+    //   <div> <HeroSection/></div>
+
+    //    {/* Card Section */}
+       
+    //    <div className='card-grid'>
+    //     {blogList.map((blog) => (
+    //       <CardSection key={blog.id} blog={blog} />
+    //     ))}
+    //   </div>
+
+    //   {/* Footer Section */}
+    //   <div>
+    //     <Footer/>
+    //   </div>
+
+    //   {/* Quote Card */}
+    //   <div>
+    //         {
+    //           CardList.map((card)=>{
+    //             return <QuoteCard key={card.id} card= {card}/>
+    //           })
+    //         };
+    //       </div>
+    // </div>
+ 
